@@ -72,6 +72,7 @@ func DayActionInfo(data string, weight, height float64) string {
 	// Считаем дистанцию для дневной активности по фиксированной длине шага.
 	var distanceM float64
 	distanceM = float64(steps) * stepLength
+	// Конвертируем дистанцию в километры
 	distanceKm := distanceM / float64(mInKm)
 
 	// Считаем количество сожжённых калорий для дневной активности.
